@@ -119,3 +119,96 @@ ion-icon {
   margin: auto;
   overflow: hidden;
 }
+
+/* Responsive for 1200px */
+@media screen and (max-width: 1200px) {
+  /* about section */
+  .clients-row {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .clients-row img {
+    margin-bottom: 30px;
+  }
+}
+
+/* Responsive for 1024px */
+@media screen and (max-width: 1200px) {
+  /* mobile navbar style  */
+  .nav-mobile {
+    display: flex;
+  }
+
+  /* sidebar  */
+  .side-bar {
+    padding: 70px 0 30px;
+    width: 260px;
+    box-shadow: 2px 0 10px #0002;
+    opacity: 0;
+    left: -300px;
+    transition: all var(--transition-default);
+  }
+
+  /* active class for toggling sidebar from left  */
+  .side-bar.active {
+    left: 0;
+    opacity: 1;
+  }
+
+  /* about  */
+  .about {
+    width: 100%;
+  }
+} 
+
+
+/* Responsive for 768px */
+
+@media screen and (max-width: 1200px) {
+  /* about section hero */
+  .hero {
+    flex-direction: column
+  }
+
+  .hero-img-bx {
+    width: 100%;
+    height: 400px;
+    font-size: 0;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 40px;
+  }
+
+  /* about section services  */
+  .about-inner {
+    padding: 40px;
+  }
+
+  .grid-item {
+    grid-template-columns: 1fr;
+  }
+
+  /* about section testimonials  */
+  .testimonial-row {
+    flex-direction: column;
+  }
+
+  .testimonial-content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* responsive for 400px  */
+@media screen and (max-width: 400px) {
+    .hero-content .name {
+      font-size: 40px;
+    }
+
+    .grid-item .item {
+      flex-direction: column;
+    }
+}
