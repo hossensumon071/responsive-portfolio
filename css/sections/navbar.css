@@ -1,0 +1,28 @@
+/* mobile navbar style  */
+.nav-mobile {
+    position: fixed;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: var(--background-dark-90);
+    border-bottom: 1px solid var(--background-dark-70);
+    padding: 10px 20px;
+    z-index: 100;
+}
+
+.nav-mobile .brand-img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.nav-mobile .brand-name {
+    font-size: var(--font-size-10);
+    margin-bottom: 0;
+}
+
+.nav-mobile .menu-toggler {
+    font-size: var(--font-size-24);
+    --ionicon-stroke-width: 50px;
+    cursor: pointer;
+}
