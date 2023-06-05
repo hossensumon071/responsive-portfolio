@@ -3,6 +3,7 @@
 /* other css file import  */
 @import url("sections/navbar.css");
 @import url("sections/sidebar.css");
+@import url("sections/about.css");
 
 :root {
   --background-dark-100: #000000;
