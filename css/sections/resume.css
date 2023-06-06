@@ -1,0 +1,65 @@
+/* Resume section structure  */
+.resume {
+    padding: 50px 70px;
+}
+
+.resume-row {
+    display: flex;
+}
+
+.resume-row .wrapper:nth-child(1) {
+    width: 65%;
+    margin-right: 40px;
+}
+
+.resume-row .wrapper .edu{
+    margin-bottom: 80px;
+}
+
+.resume-row h2 {
+    margin-bottom: 20px;
+}
+
+.resume-row .grid-item {
+    position: relative;
+    grid-template-columns: 0.5fr 1fr;
+    grid-gap: 0px 50px;
+    margin-bottom: 20px;
+}
+
+.resume-row .grid-item .year {
+    text-align: right;
+    font-size: var(--font-size-14);
+}
+
+.resume-row .grid-item .company {
+    text-align: right;
+    font-size: var(--font-size-12);
+    color: var(--color-white-70);
+}
+
+.resume-row .grid-item .edu-desc {
+    font-size: var(--font-size-13);
+    color: var(--color-white-80);
+}
+
+.resume-row .grid-item .divider {
+    position: absolute;
+    top: 0;
+    left: 34.5%;
+    width: 1px;
+    height: calc(100% + 40px);
+    background: var(--background-dark-60);
+}
+
+.resume-row .grid-item .divider::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background: var(--background-dark-90);
+    box-shadow: 0 0 0 2px var(--background-orange);
+}
